@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     
 setup(
     name='diec',
-    version='1.0',
+    version='0.1',
     packages=find_packages(),
     license='MIT',
     description='A tool that encodes text and give out a key, that you can decode with this program too!',
@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/wfxey/binaryconvert',
-    download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v1.0.tar.gz',
+    download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v0.1.tar.gz',
     keywords=['binary', '8-bit', 'text-to-binary'],
     install_requires=[
         #Empty
