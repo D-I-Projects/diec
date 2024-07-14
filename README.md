@@ -7,4 +7,3 @@ A tool that encodes text and give out a key, that you can decode with this progr
 ```bash
 pip install diec
 ```
-(Geht natürlich noch nicht)
