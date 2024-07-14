@@ -17,7 +17,7 @@ setup(
     download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v0.1.tar.gz',
     keywords=['diec', 'encoding', 'decoding'],
     install_requires=[
-        # Specify dependencies here, if any
+        'binaryconvert',
     ],
     python_requires='>=3.9',
     classifiers=[
