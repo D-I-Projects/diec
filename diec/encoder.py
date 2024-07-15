@@ -10,11 +10,12 @@ def encode(text):
     binary_list = []
 
     for char in text_binary:
-        binary_text_numbers = char + str(random_number)
-        random_number_char = random.randint(10**31, 10**32 - 1)
-        encoded_char = binary_text_numbers + str(random_number_char)
-        key_string += f"-{random_number_char}" 
-        binary_list.append(encoded_char)
+        if char.isdigit():
+            binary_text_numbers = int(char) + random_number
+            random_number_char = random.randint(10**31, 10**32 - 1)
+            encoded_char = str(binary_text_numbers + random_number_char)
+            key_string += f"-{random_number_char}" 
+            binary_list.append(encoded_char)
 
     encoded_string = ' '.join(binary_list)
     
