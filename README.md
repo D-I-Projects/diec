@@ -25,19 +25,19 @@ The Key you created : <a href="https://github.com/D-I-Projects/diec/blob/main/di
 
 The encoded text : <a href="https://github.com/D-I-Projects/diec/blob/main/diec_example/encoded.diec">encoded.diec</a>
 
-**Bot of them will apear in your current repository**
+**Both of them will apear in your current directory**
+
 <hr>
 
-## ToText()
+## decode()
 
 ```python
-from binaryconvert import convert
+from diec.decoder import decode
 
-convert.ToText("01001000 01100001 01100001 01101100 01100001 01101100 01101100 01100001 01100001 01101111")
+decode() #The key.diec and encoded.diec file have to be in the same directory as the file that runs that command.
 ```
 ### Output
 ```bash
-Hi, my name is wfxey!
+I love python and I love to learn new things here too! <3
 ```
-
 <hr>
