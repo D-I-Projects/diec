@@ -1,6 +1,6 @@
 # Diec
 
-| [diec (D&I)](https://github.com/D-I-Projects/diec) | [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/D-I-Projects/diec#license) | [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/) | <a href="https://github.com/D-I-Projects/diec/blob/master/CONTRIBUTING.md"><img src="https://img.shields.io/github/contributors-anon/D-I-Projects/diec" alt="Contributors badge" /></a> | ```pip install diec``` |
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/D-I-Projects/diec#license) | [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/) | <a href="https://github.com/D-I-Projects/diec/blob/master/CONTRIBUTING.md"><img src="https://img.shields.io/github/contributors-anon/D-I-Projects/diec" alt="Contributors badge" /></a> | ```pip install diec``` |
 
 A tool that encodes text and give out a key, that you can decode with this program too!
 
