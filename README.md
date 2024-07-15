@@ -23,7 +23,7 @@ encode("I love python and I love to learn new things here too! <3")
 
 The Key you created : <a href="https://github.com/D-I-Projects/diec/blob/main/diec_example/key.diec">key.diec</a>
 
-
+The encoded text : <a href="https://github.com/D-I-Projects/diec/blob/main/diec_example/encoded.diec">encoded.diec</a>
 
 <hr>
 
