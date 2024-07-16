@@ -17,3 +17,6 @@ def encode_cli(text):
 def decode_cli():
     """Decodes the provided text."""
     decode()
+
+if __name__ == "__main__":
+    cli()
