@@ -13,7 +13,7 @@ setup(
     author_email='projectsdi02@gmail.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/wfxey/diec',
+    url='https://github.com/d-i-projects/diec',
     download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v1.6.tar.gz',
     keywords=['diec', 'encoding', 'decoding'],
     install_requires=[
