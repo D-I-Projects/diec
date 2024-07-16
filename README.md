@@ -71,13 +71,13 @@ After installation, you can use the following commands:
    To encode a text, use the `encode_cli` command. Provide the desired text in quotes:
 
    ```bash
-   diec-cli encode-cli "Your text here"
+   python -m diec encode-cli "Your text here"
    ```
 
    **Example**:
 
    ```bash
-   diec-cli encode-cli "I love Python and learning new things! <3"
+   python -m diec encode-cli "I love Python and learning new things! <3"
    ```
 
    After running this command, a key file (`key.diec`) and an encoded file (`encoded.diec`) will be created in your current directory.
@@ -87,11 +87,9 @@ After installation, you can use the following commands:
    To decode an encoded text, use the `decode_cli` command:
 
    ```bash
-   diec-cli decode-cli
+   python -m diec decode-cli
    ```
 
-   This command will prompt you to enter the text to decode. Make sure that the `key.diec` and `encoded.diec` files are in the same directory as the script you run.
+   Make sure that the `key.diec` and `encoded.diec` files are in the same directory as the script you run.
 
 ---
-
-With this CLI, it's easy to quickly encode and decode text without directly interacting with the code!
