@@ -28,4 +28,8 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.9',
     ],
+    entry_points='''
+        [console_scripts]
+        diec-cli=diec.cli:cli
+    ''',
 )

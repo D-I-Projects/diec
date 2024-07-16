@@ -28,6 +28,7 @@ def decode():
     
     decoded_text = ''.join([chr(int(bv, 2)) for bv in binary_values if len(bv) == 8])
 
+    print(decoded_text)
     return decoded_text
 
 if __name__ == "__main__":
