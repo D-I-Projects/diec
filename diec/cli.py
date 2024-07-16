@@ -15,6 +15,6 @@ def encode_cli(text):
     
 @cli.command()
 @click.argument('text')
-def decode_cli(text):
+def decode_cli():
     """Decodes the provided text."""
-    decode(text)
+    decode()
