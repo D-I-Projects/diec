@@ -6,7 +6,8 @@ def encode(text):
     random_number = random.randint(10**31, 10**32 - 1)
     key_string += str(random_number)
     key_string += "--"
-    text_binary = convert.ToBinary(text)
+    bit = 8
+    text_binary = convert.ToBinary(text, bit)
     binary_list = []
 
     for char in text_binary:
