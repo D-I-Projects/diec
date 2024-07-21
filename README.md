@@ -10,6 +10,8 @@
 
 A tool that encodes text and gives out a key that you can decode with this program too!
 
+Our official test UI : [diec-test-gui](https://github.com/D-I-Projects/diec-test-gui)
+
 ## Installation
 
 ```bash
