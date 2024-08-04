@@ -10,7 +10,7 @@ setup(
     license='MIT',
     description='A tool that encodes text and provides a key for decoding!',
     author='D&I',
-    author_email='projectsdi02@gmail.com',
+    author_email='di.projects.help@gmail.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/d-i-projects/diec',
