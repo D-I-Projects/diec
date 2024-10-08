@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='diec',
-    version='1.9',
+    version='2.0',
     packages=find_packages(),
     license='MIT',
     description='A tool that encodes text and provides a key for decoding!',
@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/d-i-projects/diec',
-    download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v1.9.tar.gz',
+    download_url='https://github.com/D-I-Projects/diec/archive/refs/tags/v2.0.tar.gz',
     keywords=['diec', 'encoding', 'decoding'],
     install_requires=[
         'binaryconvert',

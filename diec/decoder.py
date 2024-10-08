@@ -7,20 +7,20 @@ def decode():
     with open("key.diec", 'r', encoding='utf-8') as file:
         key_string = file.read()
 
-    initial_random_number = int(re.search(r'diec///(\d+)--', key_string).group(1)) #Main number extraction
+    initial_random_number = int(re.search(r'diec///(\d+)--', key_string).group(1))
 
-    random_numbers = [int(num) for num in re.findall(r'-(\d+)', key_string)] #Extracts all encoded numbers
+    random_numbers = [int(num) for num in re.findall(r'-(\d+)', key_string)]
 
-    binary_list = encoded_string.split() #Turn it in a list with all numbers
+    binary_list = encoded_string.split()
 
     decoded_binary = []
 
     for idx, encoded_char in enumerate(binary_list):
-        binary_text_numbers = int(encoded_char) - random_numbers[idx] #Subtracts every number with the main number
+        binary_text_numbers = int(encoded_char) - random_numbers[idx]
 
-        original_number = binary_text_numbers - initial_random_number #subtracts the number specific number from every encoded number
+        original_number = binary_text_numbers - initial_random_number
 
-        decoded_binary.append(str(original_number)) #Adds the decoded binary to the list
+        decoded_binary.append(str(original_number))
 
     decoded_binary_string = ''.join(decoded_binary)
 

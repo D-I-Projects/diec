@@ -2,29 +2,29 @@ import random
 from binaryconvert import convert
 
 def encode(text):
-    key_string = "diec///" 
-    random_number = random.randint(10**31, 10**32 - 1)
-    key_string += str(random_number)
-    key_string += "--"
+    key_string = ["diec///"]
+    random_number = random.randint(10**7, 10**8 - 1)
+    key_string.append(str(random_number))
+    key_string.append("--")
+    
     bit = 8
     text_binary = convert.ToBinary(text, bit)
     binary_list = []
 
     for char in text_binary:
         if char.isdigit():
-            binary_text_numbers = int(char) + random_number
-            random_number_char = random.randint(10**31, 10**32 - 1)
-            encoded_char = str(binary_text_numbers + random_number_char)
-            key_string += f"-{random_number_char}" 
+            binary_text_number = int(char) + random_number
+            random_number_char = random.randint(10**7, 10**8 - 1)
+            encoded_char = str(binary_text_number + random_number_char)
+            key_string.append(f"-{random_number_char}")
             binary_list.append(encoded_char)
 
     encoded_string = ' '.join(binary_list)
-    
-    with open("encoded.diec", 'w', encoding='utf-8') as file:
-        file.write(encoded_string)
-        
-    with open("key.diec", 'w', encoding='utf-8') as file:
-        file.write(key_string)
+    key_string = ''.join(key_string)
+
+    with open("encoded.diec", 'w', encoding='utf-8') as file_encoded, open("key.diec", 'w', encoding='utf-8') as file_key:
+        file_encoded.write(encoded_string)
+        file_key.write(key_string)
 
     return encoded_string, key_string
 
